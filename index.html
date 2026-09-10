@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verus Studio Barber</title>
+    <link rel="shortcut icon" href="Imagens Verus/LOGO.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontes Estilo Barba / Americana: Oswald + Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="logo">
+            <img src="Imagens Verus/LOGO.png" alt="Verus Studio Barber" class="logo-img">
+        </div>
+        <nav class="nav">
+            <a href="#inicio">INÍCIO</a>
+            <a href="#barbeiros">BARBEIROS</a>
+            <a href="#precos">PREÇOS</a>
+            <a href="#patrocinadores">PARCEIROS</a>
+            <a href="#sobre">SOBRE</a>
+            <a href="#localizacao">LOCALIZAÇÃO</a>
+        </nav>
+        
+    </header>
+
+    <!-- Hero Section / Banner Principal (Imagem com Hover para Vídeo) -->
+    <section class="hero" id="inicio">
+        <!-- Imagem principal do banner -->
+        <img src="Imagens Verus/BANNER.png" alt="Verus Studio Barber Banner" class="hero-img-bg">
+        
+        <!-- Vídeo que aparece ao passar o mouse -->
+        <video class="hero-video-bg" autoplay loop muted playsinline poster="hero-poster.jpg">
+            <source src="Imagens Verus/video - verus.mp4" type="video/mp4">
+        </video>
+        
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <div class="location-badge">TATUAPÉ — SÃO PAULO</div>
+            <h1>VERUS<br><span class="highlight">STUDIO</span><br>BARBER</h1>
+            <p>Um conceito de autenticidade, força e identidade. Verdade no trabalho, na conexão e na experiência de cada pessoa que passa por aqui.</p>
+            <div class="hero-btns">
+                <a href="#precos" class="btn-secondary">VER PREÇOS</a>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+   <!-- Carrossel Automático de Cortes -->
+<section class="section cortes-section">
+    <h2 class="section-title">NOSSOS <span class="highlight">CORTES</span></h2>
+    <p class="subtitle">Deslize para explorar — pause para apreciar</p>
+    
+    <div class="carousel-infinite">
+        <div class="carousel-track">
+            <!-- CONJUNTO ORIGINAL (Cortes 1 a 5) -->
+            <div class="card-cortes">
+                <img src="Imagens Verus/corte 1.jpeg" alt="Atitude">
+                <div class="card-tag">ATITUDE</div>
+            </div>
+            <div class="card-cortes">
+                <img src="Imagens Verus/corte 2.jpeg" alt="Tesoura e Habilidade">
+                <div class="card-tag">TESOURA E HABILIDADE</div>
+            </div>
+            <div class="card-cortes">
+                <img src="Imagens Verus/corte 3.jpeg" alt="Barber Profissional">
+                <div class="card-tag">BARBER PROFISSIONAL</div>
+            </div>
+            <div class="card-cortes">
+                <img src="Imagens Verus/corte 4.jpeg" alt="Corte Moderno">
+                <div class="card-tag">CORTE MODERNO NA BARBEARIA</div>
+            </div>
+            <div class="card-cortes">
+                <img src="Imagens Verus/corte 5.jpeg" alt="Visual Impecável">
+                <div class="card-tag">VISUAL IMPECÁVEL PARA O SEU ESTILO</div>
+            </div>
+
+            <!-- CONJUNTO DUPLICADO (Cópia Exata do 1 ao 5 para Loop Infinito Perfeito) -->
+            <div class="card-cortes">
+                <img src="Imagens Verus/corte 6.jpeg" alt="Atitude">
+                <div class="card-tag">ATITUDE</div>
+            </div>
+            <div class="card-cortes">
+                <img src="Imagens Verus/corte 7.jpeg" alt="Tesoura e Habilidade">
+                <div class="card-tag">TESOURA E HABILIDADE</div>
+            </div>
+            <div class="card-cortes">
+                <img src="Imagens Verus/corte 8.jpeg" alt="Barber Profissional">
+                <div class="card-tag">BARBER PROFISSIONAL</div>
+            </div>
+            <div class="card-cortes">
+                <img src="Imagens Verus/corte 9.png" alt="Corte Moderno">
+                <div class="card-tag">CORTE MODERNO NA BARBEARIA</div>
+            </div>
+            <div class="card-cortes">
+                <img src="Imagens Verus/corte 10.png" alt="Visual Impecável">
+                <div class="card-tag">VISUAL IMPECÁVEL PARA O SEU ESTILO</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Letreiro Passando Automático -->
+    <div class="ticker-marquee">
+        <div class="ticker-track">
+            <span>VERUS STUDIO BARBER</span>
+            <span class="highlight">VERUS STUDIO BARBER</span>
+            <span>VERUS STUDIO BARBER</span>
+            <span class="highlight">VERUS STUDIO BARBER</span>
+            <span>VERUS STUDIO BARBER</span>
+            <span class="highlight">VERUS STUDIO BARBER</span>
+        </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Sobre Nós -->
+    <section class="section sobre-section" id="sobre">
+        <div class="container-grid">
+            <div class="sobre-text">
+                <span class="badge">NOSSA HISTÓRIA</span>
+                <h2>APRESENTO A VOCÊS <span class="highlight">A VERUS</span></h2>
+                <p>Um conceito de autenticidade, força e identidade. Com grande significado aqui para nós, <strong>"verdadeiro"</strong>. É exatamente isso que queremos transmitir: verdade no trabalho, na conexão e na experiência de cada pessoa que passa por aqui.</p>
+                <ul class="lista-pontos">
+                    <li><span class="bullet"></span> Nova identidade, mesmo propósito.</li>
+                    <li><span class="bullet"></span> Um espaço criado para quem valoriza estilo, confiança e atitude.</li>
+                </ul>
+                <div class="welcome-box">Bem-vindos (as) à VERUS.</div>
+            </div>
+            <div class="sobre-logo-container">
+                <img src="Imagens Verus/LOGO.png" alt="Verus Logo Marca D'água" class="sobre-logo">
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Barbeiros com efeito Hover de Vídeo -->
+    <section class="section barbeiros-section" id="barbeiros">
+        <h2 class="section-title">NOSSOS <span class="highlight">BARBEIROS</span></h2>
+        <p class="subtitle">Passe o mouse para ver cada barbeiro em ação</p>
+
+        <!-- Barbeiro 1 -->
+        <div class="barbeiro-card">
+            <div class="barbeiro-media">
+                <img src="Imagens Verus/Dudinha.jpg" alt="Dudinha" class="media-img">
+                <video class="media-video" autoplay loop muted playsinline>
+                    <source src="Imagens Verus/video -dudinha.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="barbeiro-info">
+                <h3>DUDA</h3>
+                <span class="cargo">BARBEIRA</span>
+                <p>À frente da barbearia, Duda une experiência, técnica e criatividade para transformar cada atendimento em uma experiência única. Especialista em tranças, cabelo, barba e estética, é reconhecida pelo cuidado nos detalhes e pela excelência em cada trabalho.
+
+                  Com personalidade, precisão e dedicação, ela comanda o espaço e garante um atendimento de qualidade, sempre buscando valorizar o estilo e a autenticidade de cada cliente.</p>
+                <div class="especialidades-title">ESPECIALIDADES</div>
+                <div class="tags-especialidades">
+                    <span>Tranças</span>
+                    <span>Corte</span>
+                    <span>Barba e Bigode</span>
+                    <span>Estética Facial</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Barbeiro 2 -->
+        <div class="barbeiro-card reverse">
+            <div class="barbeiro-info">
+                <h3>LÉO</h3>
+                <span class="cargo">BARBEIRO</span>
+                <p>Léo faz parte da equipe Verus Studio Barber e se destaca pela técnica, precisão e atenção aos detalhes. Especialista em cortes, barba e sobrancelha, busca entregar um resultado impecável em cada atendimento.
+
+                    Com experiência e dedicação, Léo entende o estilo de cada cliente e transforma cada corte em um trabalho feito sob medida, mantendo o padrão de qualidade e profissionalismo da Verus.</p>
+                <div class="especialidades-title">ESPECIALIDADES</div>
+                <div class="tags-especialidades">
+                    <span>Corte</span>
+                    <span>Barba e Bigode</span>
+                    <span>Depilação</span>
+                    <span>Sobrancelha</span>
+                </div>
+            </div>
+            <div class="barbeiro-media">
+                <img src="Imagens Verus/Léozinho.jpg" alt="Léozinho" class="media-img">
+                <video class="media-video" autoplay loop muted playsinline>
+                    <source src="Imagens Verus/video - leo.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Tabela de Preços -->
+    <section class="section precos-section" id="precos">
+        <h2 class="section-title">TABELA DE <span class="highlight">PREÇOS</span></h2>
+        <p class="subtitle">Qualidade e transparência em cada atendimento</p>
+
+        <div class="precos-grid">
+            <div class="preco-card">
+                <div class="preco-header">CORTE</div>
+                <div class="tempo">30min</div>
+                <div class="valor">R$ 55,00</div>
+            </div>
+            <div class="preco-card">
+                <div class="preco-header">TRANÇAS</div>
+                <div class="tempo">2h</div>
+                <div class="valor">A partir de R$ 200,00</div>
+            </div>
+            <div class="preco-card">
+                <div class="preco-header">CORTE E BARBA</div>
+                <div class="tempo">1h</div>
+                <div class="valor">R$ 110,00</div>
+            </div>
+            <div class="preco-card">
+                <div class="preco-header">CORTE E SOBRANCELHA</div>
+                <div class="tempo">35min</div>
+                <div class="valor">R$ 70,00</div>
+            </div>
+            <div class="preco-card">
+                <div class="preco-header">BIGODE</div>
+                <div class="tempo">10min</div>
+                <div class="valor">R$ 15,00</div>
+            </div>
+            <div class="preco-card">
+                <div class="preco-header">PROGRESSIVA</div>
+                <div class="tempo">50min</div>
+                <div class="valor">A partir de R$ 100,00</div>
+            </div>
+        </div>
+
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Patrocinadores e Parceiros -->
+    <section class="section patrocinadores-section" id="patrocinadores">
+        <h2 class="section-title">NOSSOS <span class="highlight">PARCEIROS</span></h2>
+        <p class="subtitle">Marcas que garantem a excelência dos nossos produtos e cuidados</p>
+
+        <div class="patrocinadores-grid">
+            <div class="patrocinador-card">
+    <!-- Logo posicionada no canto superior direito -->
+    <img src="Imagens Verus/logo - fox for men.png" alt="Fox For Men Logo" class="patrocinador-logo-top">
+
+    <div class="patrocinador-img-container">
+        <img src="Imagens Verus/fox for men.png" alt="Produtos Fox For Men" class="patrocinador-img">
+    </div>
+    <div class="patrocinador-info">
+        <h3>FOX FOR MEN</h3>
+        <span class="patrocinador-tag">PARCEIRO OFICIAL</span>
+        <p>Linha completa de cosméticos e produtos de alta performance para cuidados masculinos, barba e cabelo.</p>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Localização -->
+    <section class="section localizacao-section" id="localizacao">
+        <h2 class="section-title">ONDE NOS <span class="highlight">ENCONTRAR</span></h2>
+
+        <div class="localizacao-grid">
+            <div class="loc-card">
+                <div class="loc-title">VERUS STUDIO BARBER</div>
+                <p class="loc-address">Rua Platina, 266<br>Tatuapé, São Paulo — SP<br>CEP 03308-010, Brasil</p>
+                <div class="horarios">
+                    <div><span>Terça a Sexta</span> <strong>09:00 — 20:00</strong></div>
+                    <div><span>Sábado</span> <strong>09:00 — 18:00</strong></div>
+                    <div><span>Domingo</span> <strong>Fechado</strong></div>
+                    <div><span>Segunda</span> <strong>Fechado</strong></div>
+                </div>
+                <a href="https://maps.google.com" target="_blank" class="btn-primary btn-block">ABRIR NO GOOGLE MAPS</a>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.481358941217!2d-46.57468112376126!3d-23.550212761208914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5eec5a8a61ed%3A0x868e401b31a89c8a!2sR.%20Platina%2C%20266%20-%20Tatuap%C3%A9%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003308-010!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Letreiro Passando Automático -->
+    <div class="ticker-marquee">
+        <div class="ticker-track">
+            <span>VERUS STUDIO BARBER</span>
+            <span class="highlight">VERUS STUDIO BARBER</span>
+            <span>VERUS STUDIO BARBER</span>
+            <span class="highlight">VERUS STUDIO BARBER</span>
+            <span>VERUS STUDIO BARBER</span>
+            <span class="highlight">VERUS STUDIO BARBER</span>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="Imagens Verus/LOGO.png" alt="Verus Logo" class="logo-footer-img">
+        </div>
+        <p class="footer-address">Rua Platina, 266 · Tatuapé · São Paulo — SP<br>Um conceito de autenticidade, força e identidade.</p>
+        
+        <div class="social-links">
+            <a href="https://api.whatsapp.com/send/?phone=5511984253611&text=Ol%C3%A1%21+Gostaria+de+agendar+um+hor%C3%A1rio+com+a+Eduarda+&type=phone_number&app_absent=0" class="social-btn" aria-label="WhatsApp">
+                <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c-.001 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/>
+                </svg>
+            </a>
+
+            <a href="https://www.instagram.com/verusstudio_?igsh=MTZtdHd0NGc1b2wzYQ%3D%3D" target="_blank" class="social-btn" aria-label="Instagram">
+                <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+            </a>
+
+            <a href="https://www.trinks.com/sao-paulo-sp/?pesquisa=Verus+Studio+#somenteComDesconto=false&precoInicial=&precoFinal=&dataPesquisa=16/08/2026&idCategoria=&facilidades=" target="_blank" rel="noopener noreferrer" class="social-btn trinks-btn" aria-label="Trinks">
+                <svg width="22" height="22" fill="currentColor" viewBox="0 0 100 100">
+                    <path d="M 33 13 C 22 13 13 22 13 33 C 13 41 18 48 25 51 C 18 54 13 61 13 69 C 13 80 22 89 33 89 C 41 89 48 84 51 77 C 54 84 61 89 69 89 C 80 89 89 80 89 69 C 89 61 84 54 77 51 C 84 48 89 41 89 33 C 89 22 80 13 69 13 C 61 13 54 18 51 25 C 48 18 41 13 33 13 Z M 51 39 L 55 47 L 63 51 L 55 55 L 51 63 L 47 55 L 39 51 L 47 47 Z"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="copyright">
+            &copy; 2026 Verus Studio Barber · Todos os direitos reservados
+        </div>
+    </footer>
+
+</body>
+</html>
