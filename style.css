@@ -706,130 +706,116 @@ body {
 }
 
 /* ==========================================================================
-   1. SMARTPHONES (Até 480px)
+   1. SMARTPHONES E TABLETS (Até 768px)
    ========================================================================== */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     html {
-        font-size: 55%; /* Compacta a escala global rem */
+        font-size: 58.5%; /* Escala confortável para leitura */
     }
 
-    body, header, main, footer {
-        padding: 0;
-        margin: 0;
-        width: 100vw;
+    body {
+        width: 100%;
         overflow-x: hidden;
     }
 
-    /* Cabeçalho / Navbar */
+    /* --- NAVBAR & MENU MOBILE --- */
     .navbar {
-        height: 5rem;
+        height: 6rem;
         padding: 0 1.5rem;
-    }
-
-    .logo-area {
-        gap: 0.5rem !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .logo-img {
-        height: 2.2rem !important;
+        height: 2.8rem !important;
     }
 
-    .site-title {
-        font-size: 0.8rem;
-    }
-
-    .site-title strong {
-        font-size: 0.9rem;
-    }
-
-    /* Esconde a lista horizontal no celular para não quebrar a tela */
+    /* Esconde o menu horizontal padrão que estava estourando */
     .nav-menu ul {
-        display: none;
+        display: none; 
     }
 
-    /* Banner Tela Cheia */
+    /* --- HERO / BANNER PRINCIPAL --- */
     .hero-fullscreen {
-        height: 100vh;
-        width: 100vw;
+        min-height: 100vh;
+        height: auto;
+        padding: 4rem 1.5rem;
     }
 
     .banner-content {
         flex-direction: column;
-        gap: 1.5rem;
+        align-items: center;
         text-align: center;
-        padding: 0 1rem;
-    }
-
-    .banner-logo {
-        height: 40vw;
-        max-height: 160px;
-    }
-
-    .banner-title .memphis {
-        font-size: 11vw;
-    }
-
-    .banner-title .grizzlies {
-        font-size: 9vw;
-    }
-}
-
-/* ==========================================================================
-   2. TABLETS / SMARTPHONES GRANDES (De 481px até 768px)
-   ========================================================================== */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    html {
-        font-size: 60%;
-    }
-
-    .navbar {
-        height: 5.5rem;
-        padding: 0 2rem;
-    }
-
-    .logo-img {
-        height: 2.6rem !important;
-    }
-
-    .site-title {
-        font-size: 0.9rem;
-    }
-
-    /* Menu com links mais compactos */
-    .nav-menu ul {
-        gap: 0.8rem;
-    }
-
-    .nav-menu a {
-        font-size: 0.75rem;
-    }
-
-    /* Banner */
-    .banner-content {
-        flex-direction: column;
         gap: 2rem;
+        padding: 0;
     }
 
     .banner-logo {
-        height: 30vw;
-        max-height: 200px;
+        width: 60vw;
+        max-width: 180px;
+        height: auto;
     }
 
-    .banner-title .memphis {
-        font-size: 8vw;
-    }
-
+    .banner-title .memphis,
     .banner-title .grizzlies {
-        font-size: 7vw;
+        font-size: 2.8rem;
+        line-height: 1.2;
+    }
+
+    /* --- CARDS DE BARBEIROS E CONTEÚDO (Mídia + Texto) --- */
+    /* Muda de lado a lado para empilhamento vertical no mobile */
+    .barbeiro-card, 
+    .card-content,
+    .parceiro-card {
+        flex-direction: column !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .barbeiro-card img,
+    .barbeiro-card video,
+    .card-media {
+        width: 100% !important;
+        height: 280px !important;
+        object-fit: cover !important;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .barbeiro-info,
+    .card-info {
+        width: 100% !important;
+        padding: 1.8rem 1.5rem !important;
+    }
+
+    /* --- CORREÇÃO DE BULLETS / LISTAS --- */
+    ul {
+        list-style: none; /* Remove a bolinha padrão desalinhada */
+        padding-left: 0;
+    }
+
+    ul li {
+        position: relative;
+        padding-left: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    ul li::before {
+        content: "•";
+        color: #2b6cb0; /* Cor azul de destaque do seu tema */
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+        top: 0;
     }
 }
 
 /* ==========================================================================
-   3. NOTEBOOKS / LAPTOPS (De 769px até 1024px)
+   2. NOTEBOOKS / LAPTOPS (De 769px até 1024px)
    ========================================================================== */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     html {
-        font-size: 62.5%; /* 1rem = 10px */
+        font-size: 62.5%;
     }
 
     .navbar {
@@ -842,11 +828,8 @@ body {
     }
 
     .nav-menu ul {
+        display: flex;
         gap: 1.2rem;
-    }
-
-    .nav-menu a {
-        font-size: 0.85rem;
     }
 
     .banner-content {
@@ -856,20 +839,12 @@ body {
 
     .banner-logo {
         height: 20vw;
-        max-height: 250px;
-    }
-
-    .banner-title .memphis {
-        font-size: 5.5vw;
-    }
-
-    .banner-title .grizzlies {
-        font-size: 4.5vw;
+        max-height: 220px;
     }
 }
 
 /* ==========================================================================
-   4. DESKTOPS E MONITORES GRANDES (Acima de 1025px)
+   3. DESKTOPS (Acima de 1025px)
    ========================================================================== */
 @media screen and (min-width: 1025px) {
     html {
@@ -886,28 +861,12 @@ body {
     }
 
     .nav-menu ul {
+        display: flex;
         gap: 2rem;
-    }
-
-    .nav-menu a {
-        font-size: 0.95rem;
     }
 
     .banner-content {
         flex-direction: row;
         gap: 3rem;
-    }
-
-    .banner-logo {
-        height: 22vw;
-        max-height: 320px;
-    }
-
-    .banner-title .memphis {
-        font-size: 5vw;
-    }
-
-    .banner-title .grizzlies {
-        font-size: 4vw;
     }
 }
